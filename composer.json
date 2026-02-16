@@ -1,0 +1,21 @@
+{
+  "name": "thinklar/laravel-prefixed-permission",
+  "description": "Spatie Permission with dynamic table prefix installer",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Thinklar\\PrefixedPermission\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Thinklar\\PrefixedPermission\\PrefixedPermissionServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "spatie/laravel-permission": "^6.0"
+  }
+}
