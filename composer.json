@@ -1,21 +1,29 @@
 {
   "name": "thinklar/laravel-prefixed-permission",
-  "description": "Spatie Permission with dynamic table prefix installer",
-  "type": "library",
-  "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "Thinklar\\PrefixedPermission\\": "src/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Thinklar\\PrefixedPermission\\PrefixedPermissionServiceProvider"
-      ]
-    }
-  },
-  "require": {
-    "spatie/laravel-permission": "^6.0"
-  }
+  "description": "Spatie Permission with dynamic table prefix installer for Laravel.",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^9.0|^10.0|^11.0",
+        "spatie/laravel-permission": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Thinklar\\PrefixedPermission\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Thinklar\\PrefixedPermission\\PrefixedPermissionServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Thinklar Consultancy Services"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
